@@ -1,5 +1,6 @@
 base:
   seed: 1998
+  log_level: "INFO"
 
 data_load:
   raw: 'data/raw/rent.csv'

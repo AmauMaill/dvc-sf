@@ -3,6 +3,8 @@ from typing import List
 import pandas as pd
 import yaml
 
+from src.utils.logs import get_logger
+
 def load_dataset(path: str) -> pd.DataFrame:
     data = pd.read_csv(path)
     return data
@@ -28,7 +30,10 @@ def filter_nas(data: pd.DataFrame) -> pd.DataFrame:
 def clean_dataset(config_path: str) -> pd.DataFrame:
     with open(config_path) as f:
         config = yaml.safe_load(f)
+
+    logger = get_logger('MAKE_DATASET', log_level=config["base"]["log_level"])
     
+    logger.info(f'Load and process dataset from {config["data_load"]["raw"]}')
     data = load_dataset(path=config["data_load"]["raw"])
     data = filter_years(data=data, offset=config["data_clean"]["offset"])
     data = filter_columns(
@@ -38,6 +43,7 @@ def clean_dataset(config_path: str) -> pd.DataFrame:
     )
     data = filter_nas(data=data)
     
+    logger.info(f'Save new dataset to {config["data_load"]["interim"]}')
     data.to_csv(config["data_load"]["interim"], index=False)
 
     return data
