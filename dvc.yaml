@@ -2,6 +2,7 @@ stages:
   make_dataset:
     cmd: python -m src.stages.make_dataset --config=params.yaml
     deps:
+      - data/raw/rent.csv
       - src/stages/make_dataset.py
     outs:
       - data/interim/rent.csv
