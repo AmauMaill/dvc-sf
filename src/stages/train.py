@@ -1,0 +1,54 @@
+
+import yaml
+import argparse
+import joblib
+import pandas as pd
+
+from sklearn.pipeline import Pipeline
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.linear_model import LinearRegression
+
+def make_pipeline() -> Pipeline:
+    categorical_transformer = Pipeline(
+    [
+        ('ohe', OneHotEncoder())
+    ]
+    )
+
+    preprocessor = ColumnTransformer([
+        ("categorical", categorical_transformer, ["county"])
+    ])
+
+    pipeline = Pipeline(
+        [
+            ("preprocessor", preprocessor),
+            ('lr', LinearRegression())
+        ]
+    )
+
+    return pipeline
+
+def train_model(config_path: str) -> Pipeline:
+    with open(config_path) as f:
+        config = yaml.safe_load(f)
+
+    pipeline = make_pipeline()
+
+    X_train = pd.read_csv(config["data_split"]["trainset_x_path"])
+    y_train = pd.read_csv(config["data_split"]["trainset_y_path"])
+
+    pipeline.fit(X_train, y_train)
+
+    joblib.dump(pipeline, config["train"]["model_path"])
+
+    return pipeline
+
+
+
+if __name__ == "__main__":
+    args_parser = argparse.ArgumentParser()
+    args_parser.add_argument('--config', dest='config', required=True)
+    args = args_parser.parse_args()
+
+    train_model(config_path=args.config)

@@ -1,0 +1,31 @@
+base:
+  seed: 1998
+
+data_load:
+  raw: './data/raw/rent.csv'
+  interim: './data/interim/rent.csv'
+  processed: './data/processed/rent.csv'
+
+data_clean:
+  offset: 2
+  features:
+    - "sqft"
+    - "county"
+    - "baths"
+    - "beds"
+  target: 
+    - "price"
+
+data_split:
+  test_size: 0.2
+  trainset_x_path: "./data/processed/train_x_rent.csv"
+  trainset_y_path: "./data/processed/train_y_rent.csv"
+  testset_x_path: "./data/processed/test_x_rent.csv"
+  testset_y_path: "./data/processed/test_y_rent.csv"
+
+train:
+  model_path: "./models/pipeline.joblib"
+
+evaluate:
+  metrics_path: "./reports/metrics.json"
+  figures_path: "./reports/figures/actual_vs_predicted.png"
