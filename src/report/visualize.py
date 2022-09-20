@@ -1,5 +1,5 @@
 import numpy as np
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 def plot_actual_vs_predicted(actual: np.ndarray, predicted: np.ndarray):
     """
@@ -17,6 +17,3 @@ def plot_actual_vs_predicted(actual: np.ndarray, predicted: np.ndarray):
     plt.xlabel('True Values', fontsize=15)
     plt.ylabel('Predictions', fontsize=15)
     plt.axis('equal')
-
-if __name__ == "__main__":
-    pass

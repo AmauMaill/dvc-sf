@@ -1,0 +1,85 @@
+schema: '2.0'
+stages:
+  make_dataset:
+    cmd: python -m src.stages.make_dataset --config=params.yaml
+    deps:
+    - path: src/stages/make_dataset.py
+      md5: b8cf0cc44cc5caae6d646a7d74dd293d
+      size: 1362
+    outs:
+    - path: data/interim/rent.csv
+      md5: 0de78b7679b1990188a671b86c0b7793
+      size: 89423
+  build_features:
+    cmd: python -m src.stages.build_features --config=params.yaml
+    deps:
+    - path: data/interim/rent.csv
+      md5: 0de78b7679b1990188a671b86c0b7793
+      size: 89423
+    - path: src/stages/build_features.py
+      md5: f4e0e108bc699b7acb3b7983327ebdb7
+      size: 540
+    outs:
+    - path: data/processed/rent.csv
+      md5: 0de78b7679b1990188a671b86c0b7793
+      size: 89423
+  data_split:
+    cmd: python -m src.stages.data_split --config=params.yaml
+    deps:
+    - path: data/processed/rent.csv
+      md5: 0de78b7679b1990188a671b86c0b7793
+      size: 89423
+    - path: src/stages/data_split.py
+      md5: 6dea189b91c5593bf867db3593111cea
+      size: 1215
+    outs:
+    - path: data/processed/test_x_rent.csv
+      md5: b08e7fd19d3a0e8a64e8eda405005f4f
+      size: 15003
+    - path: data/processed/test_y_rent.csv
+      md5: 7ef7c4860ea2d99e9ffdca95b4babb87
+      size: 2952
+    - path: data/processed/train_x_rent.csv
+      md5: ef34b29fc8098bc634f8067b3fcda6e8
+      size: 59745
+    - path: data/processed/train_y_rent.csv
+      md5: 695d0f73c9c9d33a73c7c08692d3e774
+      size: 11752
+  train:
+    cmd: python -m src.stages.train --config=params.yaml
+    deps:
+    - path: data/processed/train_x_rent.csv
+      md5: ef34b29fc8098bc634f8067b3fcda6e8
+      size: 59745
+    - path: data/processed/train_y_rent.csv
+      md5: 695d0f73c9c9d33a73c7c08692d3e774
+      size: 11752
+    - path: src/stages/train.py
+      md5: 6b0156eeabb6376a5df52232db3aafbd
+      size: 1255
+    outs:
+    - path: models/pipeline.joblib
+      md5: d7d1f28a1f067ceae243c194a6aa8182
+      size: 2471
+  evaluate:
+    cmd: python -m src.stages.evaluate --config=params.yaml
+    deps:
+    - path: data/processed/test_x_rent.csv
+      md5: b08e7fd19d3a0e8a64e8eda405005f4f
+      size: 15003
+    - path: data/processed/test_y_rent.csv
+      md5: 7ef7c4860ea2d99e9ffdca95b4babb87
+      size: 2952
+    - path: models/pipeline.joblib
+      md5: d7d1f28a1f067ceae243c194a6aa8182
+      size: 2471
+    - path: src/stages/evaluate.py
+      md5: d63e239a6e5b2769aa52fdb400b66d94
+      size: 1268
+    outs:
+    - path: reports/figures/actual_vs_predicted.png
+      md5: 005bf90fd75718853a6d4b0866554833
+      size: 22862
+    - path: reports/metrics.json
+      md5: b45b8f15556ddc5156fb53eebd917708
+      size: 63

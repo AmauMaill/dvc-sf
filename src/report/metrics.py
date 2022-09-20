@@ -11,6 +11,3 @@ def make_metrics(actual: np.ndarray, predicted: np.ndarray) -> Dict:
     }
 
     return metrics
-
-if __name__ == "__main__":
-    pass
