@@ -1,0 +1,4 @@
+[core]
+    remote = rent
+['remote "rent"']
+    url = s3://dvc-sf
