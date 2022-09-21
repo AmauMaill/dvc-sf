@@ -16,7 +16,7 @@ def train_model(config_path: str) -> Pipeline:
     logger = get_logger('SPLIT_DATA', log_level=config["base"]["log_level"])
 
     logger.info('Create pipeline / model')
-    pipeline = make_pipeline(config=config)
+    pipeline = make_pipeline()
 
     logger.info('Load train datasets')
     X_train = pd.read_csv(config["data_split"]["trainset_x_path"])
