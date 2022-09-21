@@ -55,8 +55,8 @@ stages:
       md5: 695d0f73c9c9d33a73c7c08692d3e774
       size: 11752
     - path: src/stages/train.py
-      md5: 10ce66366c9ec4822b87ca23f9ca81ba
-      size: 1579
+      md5: 9d0712ff4828056a6f4ac9a458e9f5c1
+      size: 1094
     outs:
     - path: models/pipeline.joblib
       md5: d7d1f28a1f067ceae243c194a6aa8182

@@ -5,31 +5,9 @@ import joblib
 import pandas as pd
 
 from sklearn.pipeline import Pipeline
-from sklearn.compose import ColumnTransformer
-from sklearn.preprocessing import OneHotEncoder
-from sklearn.linear_model import LinearRegression
 
 from src.utils.logs import get_logger
-
-def make_pipeline() -> Pipeline:
-    categorical_transformer = Pipeline(
-    [
-        ('ohe', OneHotEncoder())
-    ]
-    )
-
-    preprocessor = ColumnTransformer([
-        ("categorical", categorical_transformer, ["county"])
-    ])
-
-    pipeline = Pipeline(
-        [
-            ("preprocessor", preprocessor),
-            ('lr', LinearRegression())
-        ]
-    )
-
-    return pipeline
+from src.pipeline.pipeline import make_pipeline
 
 def train_model(config_path: str) -> Pipeline:
     with open(config_path) as f:
