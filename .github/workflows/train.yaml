@@ -15,18 +15,14 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
         run: |
+          cml ci --unshallow
           pip install -U -r requirements.txt
-          
           dvc pull --run-cache
           dvc repro
       - name: Create CML report
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Compare to main
-          
-          #git fetch --prune
-
           # Metrics
           echo "# Metrics" >> report.md
           dvc metrics diff --show-md main > report.md
