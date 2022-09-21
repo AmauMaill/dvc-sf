@@ -5,6 +5,7 @@ stages:
       - src/stages/make_dataset.py
     outs:
       - data/raw/rent.csv
+  
   clean_dataset:
     cmd: python -m src.stages.clean_dataset --config=params.yaml
     deps:
@@ -12,6 +13,7 @@ stages:
       - src/stages/make_dataset.py
     outs:
       - data/interim/rent.csv
+  
   build_features:
     cmd: python -m src.stages.build_features --config=params.yaml
     deps:
@@ -19,6 +21,7 @@ stages:
       - src/stages/build_features.py
     outs:
       - data/processed/rent.csv
+  
   data_split:
     cmd: python -m src.stages.data_split --config=params.yaml
     deps:
@@ -29,6 +32,7 @@ stages:
       - data/processed/train_y_rent.csv
       - data/processed/test_x_rent.csv
       - data/processed/test_y_rent.csv
+  
   train:
     cmd: python -m src.stages.train --config=params.yaml
     deps:
@@ -37,6 +41,7 @@ stages:
       - src/stages/train.py
     outs:
       - models/pipeline.joblib
+  
   evaluate:
     cmd: python -m src.stages.evaluate --config=params.yaml
     deps:
@@ -45,6 +50,8 @@ stages:
       - models/pipeline.joblib
       - src/stages/evaluate.py
     outs:
-      - reports/metrics.json
       - reports/figures/actual_vs_predicted.png
+    metrics:
+      - reports/metrics.json:
+          cache: false
   
