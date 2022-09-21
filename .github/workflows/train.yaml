@@ -25,5 +25,4 @@ jobs:
           # Visualize actuals vs predicted
           dvc plots diff --show-vega main > vega.json
 
-          dvc push --run-cache
           cml send-comment report.md
