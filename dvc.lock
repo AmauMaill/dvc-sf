@@ -59,8 +59,8 @@ stages:
       size: 1094
     outs:
     - path: models/pipeline.joblib
-      md5: d7d1f28a1f067ceae243c194a6aa8182
-      size: 2471
+      md5: 24cf5b218cf871177574ff61942ee542
+      size: 2524
   evaluate:
     cmd: python -m src.stages.evaluate --config=params.yaml
     deps:
@@ -71,20 +71,20 @@ stages:
       md5: 7ef7c4860ea2d99e9ffdca95b4babb87
       size: 2952
     - path: models/pipeline.joblib
-      md5: d7d1f28a1f067ceae243c194a6aa8182
-      size: 2471
+      md5: 24cf5b218cf871177574ff61942ee542
+      size: 2524
     - path: src/stages/evaluate.py
       md5: cc346d595b04c322ab7a93b5cdee83a5
       size: 2098
     outs:
     - path: reports/figures/actual_vs_predicted.png
-      md5: 005bf90fd75718853a6d4b0866554833
-      size: 22862
+      md5: 4a14709d49dd0a8362c116cda1061089
+      size: 22990
     - path: reports/figures/data_actual_vs_predicted.csv
-      md5: b2968f7e6adffd6335ab859c75470f5f
-      size: 13668
+      md5: 5166c70cb6ca548a0ec1b35200ac23b9
+      size: 13903
     - path: reports/metrics.json
-      md5: b45b8f15556ddc5156fb53eebd917708
+      md5: b2c9e97702e773a2559f7dd481591bb6
       size: 63
   clean_dataset:
     cmd: python -m src.stages.clean_dataset --config=params.yaml
