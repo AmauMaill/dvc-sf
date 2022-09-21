@@ -24,7 +24,7 @@ jobs:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Compare to main
-          git fetch --prune
+          #git fetch --prune
 
           # Metrics
           echo "# Metrics" >> report.md
