@@ -4,8 +4,8 @@ stages:
     cmd: python -m src.stages.make_dataset --config=params.yaml
     deps:
     - path: src/stages/make_dataset.py
-      md5: 852ceef84edf7c951cb5694e26a447fb
-      size: 904
+      md5: 97bfa081d081afa28f756edc66c22689
+      size: 1069
     outs:
     - path: data/raw/rent.csv
       md5: 0dcd758aaaebe0d4da3c4a0022489048
@@ -93,8 +93,8 @@ stages:
       md5: 0dcd758aaaebe0d4da3c4a0022489048
       size: 37609113
     - path: src/stages/make_dataset.py
-      md5: 852ceef84edf7c951cb5694e26a447fb
-      size: 904
+      md5: 97bfa081d081afa28f756edc66c22689
+      size: 1069
     outs:
     - path: data/interim/rent.csv
       md5: 0de78b7679b1990188a671b86c0b7793
