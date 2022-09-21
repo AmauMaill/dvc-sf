@@ -3,4 +3,4 @@ pandas
 numpy
 boto3
 matplotlib
-yaml
+pyyaml
