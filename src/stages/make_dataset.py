@@ -6,6 +6,14 @@ import yaml
 from src.utils.logs import get_logger
 
 def make_dataset(config_path: str = None) -> pd.DataFrame:
+    """_summary_
+
+    Args:
+        config_path (str, optional): _description_. Defaults to None.
+
+    Returns:
+        pd.DataFrame: _description_
+    """
 
     with open(config_path) as f:
         config = yaml.safe_load(f)
