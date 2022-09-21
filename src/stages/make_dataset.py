@@ -19,7 +19,7 @@ def make_dataset(config_path: str = None) -> pd.DataFrame:
 
     logger.info('Get dataset from s3')
     response = client.get_object(Bucket="dvc-sf", Key="rent.csv")
-    data = pd.read_csv(response.get("Body"))
+    data = pd.read_csv(response.get("Body"), sep=",")
 
     logger.info(f'Save dataset to {config["data_load"]["raw"]}')
     data.to_csv(config["data_load"]["raw"], index=False)
