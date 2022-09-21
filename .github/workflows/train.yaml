@@ -30,7 +30,7 @@ jobs:
           git fetch --prune
           # Metrics
           echo "# Metrics" >> report.md
-          dvc metrics diff --show-md main > report.md
+          dvc metrics diff --show-md main >> report.md
 
           # Visualize actuals vs predicted
           echo "# Plots" >> report.md
