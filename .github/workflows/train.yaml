@@ -35,7 +35,7 @@ jobs:
             -x actual \
             -y predicted \
             --show-vega main > vega.json
-          vl12png vega.json -s 1.5 > plot.png
+          vl2png vega.json -s 1.5 > plot.png
           cml publish --md plot.png >> report.md
 
           cml send-comment report.md
