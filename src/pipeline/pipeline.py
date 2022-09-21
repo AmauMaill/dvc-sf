@@ -7,7 +7,7 @@ from sklearn.pipeline import Pipeline
 def make_pipeline(config: Dict) -> Pipeline:
     categorical_transformer = Pipeline(
     [
-        ('ohe', OneHotEncoder())
+        ('ohe', OneHotEncoder(sparse=False))
     ]
     )
 
