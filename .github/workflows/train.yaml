@@ -29,7 +29,12 @@ jobs:
 
           # Visualize actuals vs predicted
           echo "# Plots" >> report.md
-          dvc plots diff --show-vega main > vega.json
+          dvc plots diff \
+            --target reports/figures/data_actual_vs_predicted.csv \
+            --template scatter \
+            -x actual \
+            -y predicted \
+            --show-vega main > vega.json
           vl12png vega.json -s 1.5 > plot.png
           cml publish --md plot.png >> report.md
 
