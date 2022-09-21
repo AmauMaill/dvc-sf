@@ -1,12 +1,13 @@
+from typing import Dict
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
-from sklearn.linear_model import LinearRegression
+from sklego.linear_model import LADRegression
 from sklearn.pipeline import Pipeline
 
 def make_pipeline() -> Pipeline:
     categorical_transformer = Pipeline(
     [
-        ('ohe', OneHotEncoder())
+        ('ohe', OneHotEncoder(sparse=False))
     ]
     )
 
@@ -17,7 +18,7 @@ def make_pipeline() -> Pipeline:
     pipeline = Pipeline(
         [
             ("preprocessor", preprocessor),
-            ('lr', LinearRegression())
+            ('lr', LADRegression())
         ]
     )
 

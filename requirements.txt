@@ -4,3 +4,4 @@ numpy
 boto3
 matplotlib
 pyyaml
+scikit-lego
