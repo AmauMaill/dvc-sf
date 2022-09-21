@@ -1,9 +1,10 @@
+from typing import Dict
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
-from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import HistGradientBoostingRegressor
 from sklearn.pipeline import Pipeline
 
-def make_pipeline() -> Pipeline:
+def make_pipeline(config: Dict) -> Pipeline:
     categorical_transformer = Pipeline(
     [
         ('ohe', OneHotEncoder())
@@ -17,7 +18,7 @@ def make_pipeline() -> Pipeline:
     pipeline = Pipeline(
         [
             ("preprocessor", preprocessor),
-            ('lr', LinearRegression())
+            ('lr', HistGradientBoostingRegressor(random_state=config["base"]["seed"]))
         ]
     )
 
