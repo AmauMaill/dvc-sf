@@ -2,8 +2,6 @@ import argparse
 from typing import List
 import pandas as pd
 import yaml
-import boto3
-import os
 
 from src.utils.logs import get_logger
 
