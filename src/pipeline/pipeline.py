@@ -4,8 +4,6 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.ensemble import HistGradientBoostingRegressor
 from sklearn.pipeline import Pipeline
 
-import yaml
-
 def make_pipeline(config: Dict) -> Pipeline:
 
     categorical_transformer = Pipeline(
