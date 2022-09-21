@@ -4,8 +4,8 @@ stages:
     cmd: python -m src.stages.make_dataset --config=params.yaml
     deps:
     - path: src/stages/make_dataset.py
-      md5: 852ceef84edf7c951cb5694e26a447fb
-      size: 904
+      md5: 97bfa081d081afa28f756edc66c22689
+      size: 1069
     outs:
     - path: data/raw/rent.csv
       md5: 0dcd758aaaebe0d4da3c4a0022489048
@@ -55,12 +55,12 @@ stages:
       md5: 695d0f73c9c9d33a73c7c08692d3e774
       size: 11752
     - path: src/stages/train.py
-      md5: 9d0712ff4828056a6f4ac9a458e9f5c1
-      size: 1094
+      md5: 43d835e9eacf21a17a0f3f4ccf37a1c6
+      size: 1107
     outs:
     - path: models/pipeline.joblib
-      md5: d7d1f28a1f067ceae243c194a6aa8182
-      size: 2471
+      md5: 30ce220c9449b1a59fda265c6d881390
+      size: 124975
   evaluate:
     cmd: python -m src.stages.evaluate --config=params.yaml
     deps:
@@ -71,8 +71,8 @@ stages:
       md5: 7ef7c4860ea2d99e9ffdca95b4babb87
       size: 2952
     - path: models/pipeline.joblib
-      md5: d7d1f28a1f067ceae243c194a6aa8182
-      size: 2471
+      md5: 30ce220c9449b1a59fda265c6d881390
+      size: 124975
     - path: src/stages/evaluate.py
       md5: cc346d595b04c322ab7a93b5cdee83a5
       size: 2098
@@ -81,11 +81,11 @@ stages:
       md5: 005bf90fd75718853a6d4b0866554833
       size: 22862
     - path: reports/figures/data_actual_vs_predicted.csv
-      md5: b2968f7e6adffd6335ab859c75470f5f
-      size: 13668
+      md5: 5a63d6c72a75880dabbb5939e390ced1
+      size: 13823
     - path: reports/metrics.json
-      md5: b45b8f15556ddc5156fb53eebd917708
-      size: 63
+      md5: e69cc7cdd4fc3909f89f71c21f15b8d6
+      size: 62
   clean_dataset:
     cmd: python -m src.stages.clean_dataset --config=params.yaml
     deps:
@@ -93,8 +93,8 @@ stages:
       md5: 0dcd758aaaebe0d4da3c4a0022489048
       size: 37609113
     - path: src/stages/make_dataset.py
-      md5: 852ceef84edf7c951cb5694e26a447fb
-      size: 904
+      md5: 97bfa081d081afa28f756edc66c22689
+      size: 1069
     outs:
     - path: data/interim/rent.csv
       md5: 0de78b7679b1990188a671b86c0b7793
