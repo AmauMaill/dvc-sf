@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 
 
 from src.report.metrics import make_metrics
-from src.report.visualize import plot_actual_vs_predicted
+from src.report.visualize import make_data_actual_vs_predicted, plot_actual_vs_predicted
 from src.utils.logs import get_logger
 
 def save_metrics(metrics: Dict, path: str):
@@ -42,12 +42,21 @@ def evaluate_model(config_path: str) -> Dict:
     logger.info('Generate metric(s) and figure(s)')
     metrics = make_metrics(y_test.to_numpy(), predicted)
     plot_actual_vs_predicted(y_test.to_numpy(), predicted)
+    data_plot_actual_vs_predicted = make_data_actual_vs_predicted(
+        y_test.to_numpy(), 
+        predicted
+    )
     
     logger.info('Save metric(s) and figure(s)')
     logger.info(f'Metric(s) saved to {config["evaluate"]["metrics_path"]}')
     save_metrics(metrics, config["evaluate"]["metrics_path"])
     logger.info(f'Figure(s) saved to {config["evaluate"]["figures_path"]}')
     save_plot(config["evaluate"]["figures_path"])
+    logger.info(f'Figure(s) saved to {config["evaluate"]["figures_path"]}')
+    data_plot_actual_vs_predicted.to_csv(
+        config["evaluate"]["data_figures_path"],
+        index=False
+    )
 
     return metrics
 

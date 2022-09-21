@@ -1,0 +1,3073 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>DVC Plot</title>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.18.2"></script>
+    
+    <style>
+        table {
+            border-spacing: 15px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id = "reports_figures_data_actual_vs_predicted_csv">
+        <script type = "text/javascript">
+            var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "values": [
+    {
+        "actual": "3450",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "5995",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2477",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3950",
+        "predicted": "3215.739130434932",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2060",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4950",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4200",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2795",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2640",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2285",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "5700",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1700",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2900",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4800",
+        "predicted": "3215.739130434932",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4000",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4500",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2788",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3863",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1750",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2349",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2689",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3400",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2700",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2250",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2300",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2000",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3100",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2600",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1825",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3850",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1850",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4200",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1850",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3200",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2250",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2290",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2450",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1795",
+        "predicted": "1760.8000000001532",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3900",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2400",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3850",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2295",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2850",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3850",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2950",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2400",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4500",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1950",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3750",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2050",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2700",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3295",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1850",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2025",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4900",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1300",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1929",
+        "predicted": "2705.2631578948894",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1700",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2950",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1675",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2375",
+        "predicted": "2705.2631578948894",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4495",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4100",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3400",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1795",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1850",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2050",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2450",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "6500",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2750",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3800",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4500",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2625",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1999",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "14950",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3495",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2695",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1850",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "6500",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2650",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2490",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2500",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "5200",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3132",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3800",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "5495",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3450",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3200",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "5600",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4500",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1500",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2095",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2519",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2295",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3395",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2150",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4195",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3600",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2250",
+        "predicted": "2705.2631578948894",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3250",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2750",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2195",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2850",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2889",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "10500",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2684",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4400",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3795",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1895",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2550",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3000",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2300",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1719",
+        "predicted": "1760.8000000001532",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3200",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3500",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4157",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2800",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3395",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2537",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2550",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3715",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4700",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3829",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2954",
+        "predicted": "2705.2631578948894",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3137",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2000",
+        "predicted": "1760.8000000001532",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3400",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1925",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4200",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2258",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3780",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1500",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3450",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2495",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3000",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3237",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2675",
+        "predicted": "3215.739130434932",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2195",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1200",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3280",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1940",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2600",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4200",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2659",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "11500",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2950",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2600",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2250",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1850",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1795",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1650",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3100",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4575",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4350",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3000",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2400",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3250",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1595",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3484",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2595",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3650",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2524",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1965",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "5995",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3500",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2500",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1415",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3700",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1570",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4900",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2825",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2400",
+        "predicted": "2705.2631578948894",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2700",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "6500",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3600",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "9500",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2000",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2623",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1850",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2700",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3121",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2400",
+        "predicted": "1760.8000000001532",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3800",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2915",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1650",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2900",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2995",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2500",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3225",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3010",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1850",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4100",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2900",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3000",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2200",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2450",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2000",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3600",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3100",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1950",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2600",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2989",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1990",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2800",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3900",
+        "predicted": "3215.739130434932",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2850",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1550",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1185",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4500",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3850",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1795",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "6595",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "5300",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2950",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3200",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3000",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4775",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2650",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2514",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "5499",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3100",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3900",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2250",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1700",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3300",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4200",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3415",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2250",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2425",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3500",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "6750",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1675",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1990",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2700",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1400",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2000",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2208",
+        "predicted": "2705.2631578948894",
+        "rev": "workspace"
+    },
+    {
+        "actual": "7850",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2639",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2974",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3200",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "6000",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2895",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2752",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2145",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "7900",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3500",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "5500",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "11500",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2600",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3326",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3097",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3120",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2400",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2450",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "7000",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1175",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1900",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2100",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3400",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1795",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3200",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3063",
+        "predicted": "2705.2631578948894",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2690",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3995",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3009",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2200",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2575",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2950",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1875",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4900",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2295",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2950",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "5000",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1900",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3795",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "6295",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2000",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3095",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3500",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1993",
+        "predicted": "1760.8000000001532",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2950",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2600",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1900",
+        "predicted": "1760.8000000001532",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2095",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "5995",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4000",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4500",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3700",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2850",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2900",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "6800",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2100",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2050",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1580",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2295",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3813",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4750",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3148",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3345",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1325",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1995",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2800",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2677",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2500",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2000",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1850",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2514",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4200",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4895",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1000",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2350",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3959",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2595",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3200",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3950",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2300",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "5200",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3000",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1600",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2950",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2300",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2525",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1650",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4500",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "5000",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2800",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3600",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2749",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4525",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2010",
+        "predicted": "1760.8000000001532",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2691",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2175",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2697",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2900",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3400",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1650",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2850",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3300",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2285",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "13500",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "7600",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2395",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3950",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2400",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4200",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2000",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2575",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4350",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3570",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1795",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1820",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4040",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2980",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4995",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2285",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1850",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3550",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4145",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4150",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1400",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "5500",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2400",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3250",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2595",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2400",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2795",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3600",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2699",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4280",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3200",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2000",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1900",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4385",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2330",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2495",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3150",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1200",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3300",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4750",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "6131",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2850",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3800",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1650",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2495",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3700",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3100",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2514",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2900",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1775",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4600",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3471",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2411",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3200",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4200",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1900",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "5600",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1775",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "8750",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3900",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2195",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2590",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4500",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3695",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1850",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1717",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2700",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2185",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "5200",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1677",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2350",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2100",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "5800",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2499",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4750",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2714",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2000",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2687",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3500",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1925",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4688",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3800",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1800",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2650",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2605",
+        "predicted": "2705.2631578948894",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2380",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3200",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3200",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3800",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2600",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2195",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2975",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2667",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3350",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1739",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2600",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3418",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2113",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3024",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4250",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2950",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2400",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1750",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3750",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4200",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3600",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3650",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3500",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2410",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1750",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1750",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3500",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1000",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2450",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2600",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2950",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2050",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2699",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4095",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3500",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4200",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3750",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4500",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3750",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4500",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2700",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "5300",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4600",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2395",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1500",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1795",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2300",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "12000",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4500",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2150",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2600",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4050",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3390",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2195",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3300",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2245",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3500",
+        "predicted": "3215.739130434932",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3225",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4500",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "5800",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1460",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1000",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2925",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2750",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "7500",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3177",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3499",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1800",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4800",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3000",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1500",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2100",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2800",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4895",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1800",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2892",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2376",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2995",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1500",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3000",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2800",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3550",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3300",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3950",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "7500",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1499",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1895",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1725",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3200",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3300",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2699",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3300",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1625",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3799",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3195",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1795",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2200",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3495",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4000",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3150",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2095",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3600",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "5000",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3326",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3600",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2800",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3800",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2450",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3600",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4300",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "5250",
+        "predicted": "3215.739130434932",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3000",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3740",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2250",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2389",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2000",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2200",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3400",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4900",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1000",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2650",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3000",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2250",
+        "predicted": "2705.2631578948894",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2195",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2995",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3750",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3200",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2200",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2913",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3680",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1775",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3395",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3750",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3895",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2850",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1250",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "6000",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2284",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1750",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2395",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3995",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1500",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2880",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3152",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2500",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4025",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "4395",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2495",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1750",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2375",
+        "predicted": "2472.6810344830055",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2653",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2100",
+        "predicted": "3247.153846154037",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3200",
+        "predicted": "4449.769067797296",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2800",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2295",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2400",
+        "predicted": "2680.094420601106",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1718",
+        "predicted": "2175.83536585386",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3000",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2150",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "3000",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1925",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    },
+    {
+        "actual": "2250",
+        "predicted": "2854.0854922285416",
+        "rev": "workspace"
+    },
+    {
+        "actual": "1999",
+        "predicted": "2942.702746363923",
+        "rev": "workspace"
+    }
+]
+    },
+    "title": "reports/figures/data_actual_vs_predicted.csv",
+    "width": 300,
+    "height": 300,
+    "layer": [
+        {
+            "encoding": {
+                "x": {
+                    "field": "actual",
+                    "type": "quantitative",
+                    "title": "actual"
+                },
+                "y": {
+                    "field": "predicted",
+                    "type": "quantitative",
+                    "title": "predicted",
+                    "scale": {
+                        "zero": false
+                    }
+                },
+                "color": {
+                    "field": "rev",
+                    "type": "nominal"
+                }
+            },
+            "layer": [
+                {
+                    "mark": "point"
+                },
+                {
+                    "selection": {
+                        "label": {
+                            "type": "single",
+                            "nearest": true,
+                            "on": "mouseover",
+                            "encodings": [
+                                "x"
+                            ],
+                            "empty": "none",
+                            "clear": "mouseout"
+                        }
+                    },
+                    "mark": "point",
+                    "encoding": {
+                        "opacity": {
+                            "condition": {
+                                "selection": "label",
+                                "value": 1
+                            },
+                            "value": 0
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "transform": [
+                {
+                    "filter": {
+                        "selection": "label"
+                    }
+                }
+            ],
+            "layer": [
+                {
+                    "encoding": {
+                        "text": {
+                            "type": "quantitative",
+                            "field": "predicted"
+                        },
+                        "x": {
+                            "field": "actual",
+                            "type": "quantitative"
+                        },
+                        "y": {
+                            "field": "predicted",
+                            "type": "quantitative"
+                        }
+                    },
+                    "layer": [
+                        {
+                            "mark": {
+                                "type": "text",
+                                "align": "left",
+                                "dx": 5,
+                                "dy": -5
+                            },
+                            "encoding": {
+                                "color": {
+                                    "type": "nominal",
+                                    "field": "rev"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+;
+            vegaEmbed('#reports_figures_data_actual_vs_predicted_csv', spec);
+        </script>
+    </div>
+    
+</body>
+</html>

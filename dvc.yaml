@@ -51,6 +51,11 @@ stages:
       - src/stages/evaluate.py
     outs:
       - reports/figures/actual_vs_predicted.png
+    plots:
+      - reports/figures/data_actual_vs_predicted.csv:
+          template: scatter
+          x: actual
+          y: predicted
     metrics:
       - reports/metrics.json:
           cache: false

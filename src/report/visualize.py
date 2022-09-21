@@ -1,5 +1,26 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd
+
+def make_data_actual_vs_predicted(
+    actual: np.ndarray, 
+    predicted: np.ndarray
+) -> pd.DataFrame:
+    """
+    Given the actual values and the predicted values, return a dataframe.
+
+    Args:
+        actual (np.ndarray): The actual values (ex: y_test)
+        predicted (np.ndarray): The predicted values
+    """
+    data = {
+        "actual": actual.ravel(),
+        "predicted": predicted.ravel()
+    }
+
+    data = pd.DataFrame.from_dict(data)
+
+    return data
 
 def plot_actual_vs_predicted(actual: np.ndarray, predicted: np.ndarray):
     """

@@ -30,3 +30,4 @@ train:
 evaluate:
   metrics_path: "reports/metrics.json"
   figures_path: "reports/figures/actual_vs_predicted.png"
+  data_figures_path: "reports/figures/data_actual_vs_predicted.csv"
