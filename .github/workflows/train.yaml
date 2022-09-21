@@ -8,23 +8,23 @@ jobs:
       - uses: actions/setup-python@v2
       - uses: iterative/setup-cml@v1
       - name: Train model
-    env:
-      REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-    run: |
-      pip install -U pip
-      pip install -U -r requirements.txt
-      
-      dvc repro
+      env:
+        REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      run: |
+        pip install -U pip
+        pip install -U -r requirements.txt
+        
+        dvc repro
 
-      # Compare metrics to main
-      git fetch --prune
-      dvc metrics diff --show-md main > report.md
+        # Compare metrics to main
+        git fetch --prune
+        dvc metrics diff --show-md main > report.md
 
-      # Visualize actuals vs predicted
-      dvc plots diff --show-vega main > vega.json
+        # Visualize actuals vs predicted
+        dvc plots diff --show-vega main > vega.json
 
-      dvc push --run-cache
-      cml send-comment report.md
+        dvc push --run-cache
+        cml send-comment report.md
       
