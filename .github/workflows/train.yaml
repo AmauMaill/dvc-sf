@@ -6,7 +6,6 @@ jobs:
     container: docker://dvcorg/cml-py3:latest
     steps:
       - uses: actions/checkout@v2
-      - uses: iterative/setup-cml@v1
       - name: cml_run
         env: 
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -16,6 +15,7 @@ jobs:
           pip install -U pip
           pip install -U -r requirements.txt
           
+          dvc pull data --run-cache
           dvc repro
 
           # Compare metrics to main
